@@ -45,7 +45,7 @@ function getInfoSelect(select) {
 async function calculate() {
   let from = label_from_currency.value;
   let to = label_to_currency.value;
-  let { rates } = await getURL(`https://api.exchangerate-api.com/v6/latest/${from}`);
+  let { rates } = await getURL(`https://api.exchangerate-api.com/v4/latest/${from}`);
   let rate = rates[to];
   tax_info.innerText = `1 ${getInfoSelect(label_from_currency)} = ${rate} ${getInfoSelect(label_to_currency)}`
   input_to_ammount.value = (input_from_ammount.value * rate).toFixed(2);

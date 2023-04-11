@@ -9,27 +9,31 @@
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
 
+<style>
+    body{
+       background-color: rgb(65, 65, 65);
+    }
+</style>
+
 <body>
-
-
     <div class="container ">
-        <div class="card col-7 container center position-absolute top-50 start-50 translate-middle p-3 text-center ">
-            <div class="row justify-content-center">
+        <div class="card col-6 container center position-absolute top-50 start-50 translate-middle p-3 text-center ">
+            <h1 class="justify-content-center">
                 Conversor de Medidas
-            </div>
+            </h1>
 
-            <div class="row justify-content-center">
-                <div class="col-sm-3 col-4">
+            <div class="row justify-content-center" style="align-items: center;">
+                <div class="col-4">
                     <select id="from_currency"></select>
                     <input type="number" id="from_ammount" value="1" />
                 </div>
-                <div class="row justify-content-center mb-4 mt-4 col-1">
+                <div class="mb-4 mt-4 col-1">
                     <button id="swap"> ⇅ </button>
                 </div>
 
-                <div class="col-sm-3 col-4">
+                <div class="col-4">
                     <select id="to_currency"></select>
-                    <input type="number" id="to_ammount" />
+                    <input type="number" id="to_ammount"/>
                 </div>
                 <div class="text-center">
                     <span id="tax_info"></span>
